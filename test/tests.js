@@ -10,6 +10,11 @@ module('enable', {
 	}
 });
 
+test('should return jQuery', function() {
+	expect(1);
+	ok($.djangocsrf( true ) === $);
+});
+
 test('with boolean', function() {
 	expect(1);
 	$.djangocsrf( true );
