@@ -5,8 +5,6 @@
 The **djangocsrf** jQuery plugin makes it easy to use AJAX calls with Django’s
 CSRF token.
 
-This is currently under development, there’s no stable release right now.
-
 ## Installation
 
 [Download][release-0.1.1] and include the script *after* the jQuery library and
