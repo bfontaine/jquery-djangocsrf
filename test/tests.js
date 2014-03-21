@@ -1,11 +1,12 @@
 if (typeof window !== 'object' || !window._in_browser) {
-	// asynchronous tests won't run with Grunt
+	// asynchronous tests won't run with Grunt because we need our server
 	asyncTest = function() {};
 }
 
 module('enable', {
 	setup: function() {
 		$.djangocsrf( false );
+        $.removeCookie('csrftoken');
 	}
 });
 
@@ -54,9 +55,22 @@ asyncTest('should extract token from cookie', function() {
 	});
 });
 
+asyncTest('should not add an header if cookie is not set', function() {
+	expect(1);
+	$.djangocsrf( true );
+	$.ajax({
+		url: '/csrf',
+		success: function( data ) {
+			strictEqual(data.present, false);
+			start();
+		}
+	});
+});
+
 module('disable', {
 	setup: function() {
 		$.djangocsrf( true );
+        $.removeCookie('csrftoken');
 	}
 });
 
@@ -88,4 +102,16 @@ test('with uppercased letters', function() {
 	expect(1);
 	$.djangocsrf( 'DIsabLe' );
 	strictEqual($.djangocsrf(), false);
+});
+
+asyncTest('should not add an header', function() {
+	expect(1);
+	$.djangocsrf( false );
+	$.ajax({
+		url: '/csrf',
+		success: function( data ) {
+			strictEqual(data.present, false);
+			start();
+		}
+	});
 });
