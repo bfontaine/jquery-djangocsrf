@@ -1,5 +1,7 @@
 # jQuery Django CSRF Plugin
 
+[![Build Status](https://travis-ci.org/bfontaine/jquery-djangocsrf.svg?branch=master)](https://travis-ci.org/bfontaine/jquery-djangocsrf)
+
 The **djangocsrf** jQuery plugin makes it easy to use AJAX calls with Django’s
 CSRF token.
 
