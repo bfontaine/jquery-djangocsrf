@@ -30,6 +30,10 @@ TODO
 
 ## Tests
 
-```sh
-grunt
-```
+Requires Node. Start the server:
+
+	$ node test/server.js
+
+Then open `http://0.0.0.0:8124/test/index.html` in your browser.
+
+Basic tests can also be run with `grunt`.
