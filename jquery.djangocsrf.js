@@ -1,5 +1,5 @@
 /**
- * jQuery Django CSRF Plugin v0.1.0
+ * jQuery Django CSRF Plugin v0.1.1
  * https://github.com/bfontaine/jquery-djangocsrf
  **/
 (function (factory) {

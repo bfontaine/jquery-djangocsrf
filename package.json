@@ -1,6 +1,6 @@
 {
     "name": "jquery.djangocsrf",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "A lightweight jQuery plugin to automatically add the CSRF token to AJAX calls",
     "main": "jquery.djangocsrf.js",
     "directories": {
