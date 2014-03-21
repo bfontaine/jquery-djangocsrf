@@ -7,9 +7,9 @@ CSRF token.
 
 This is currently under development, there’s no stable release right now.
 
-## Usage
+## Installation
 
-The plugin depends on `jquery.cookie`, so include it *after* that one:
+Include the script *after* the jQuery library and its Cookie plugin:
 
 ```html
 <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
@@ -17,7 +17,9 @@ The plugin depends on `jquery.cookie`, so include it *after* that one:
 <script src="path/to/jquery.djangocsrf.js"></script>
 ```
 
-Then enable it:
+## Usage
+
+Enable the plugin:
 
 ```js
 $.djangocsrf( "enable" );
@@ -26,9 +28,8 @@ $.djangocsrf( "enable" );
 That’s all! After that, all AJAX calls made through jQuery to the current
 domain will include an `X-CSRFToken` header set to the client’s token.
 
-## Install
-
-TODO
+Disable the plugin with `$.djangocsrf( "disable" )`, and query its current
+state with `$.djangocsrf()`.
 
 ## Tests
 
