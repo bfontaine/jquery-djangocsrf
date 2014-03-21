@@ -1,0 +1,26 @@
+{
+  "name": "jquery.djangocsrf",
+  "version": "0.1.0",
+  "authors": [
+    "Baptiste Fontaine <b@ptistefontaine.fr>"
+  ],
+  "description": "Automatically set the Django CSRF header for your AJAX calls",
+  "main": "./jquery.djangocsrf.js",
+  "keywords": [
+    "jquery",
+    "django",
+    "csrf",
+    "ajax"
+  ],
+  "license": "MIT",
+  "homepage": "github.com/bfontaine/jquery-djangocsrf",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "*.md"
+  ]
+}

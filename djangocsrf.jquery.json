@@ -1,0 +1,23 @@
+{
+    "name": "djangocsrf",
+    "version": "0.1.0",
+    "title": "jQuery Django CSRF",
+    "description": "A lightweight jQuery plugin to automatically add the CSRF token to AJAX calls",
+    "author": {
+        "name": "Baptiste Fontaine",
+        "url": "http://bfontaine.net"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://raw.github.com/bfontaine/jquery-djangocsrf/master/LICENSE"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">=1.2",
+        "cookie": ">=1.4.0"
+    },
+    "bugs": "https://github.com/bfontaine/jquery-djangocsrf/issues",
+    "homepage": "https://github.com/bfontaine/jquery-djangocsrf",
+    "docs": "https://github.com/bfontaine/jquery-djangocsrf#readme"
+}
