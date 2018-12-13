@@ -13,7 +13,7 @@ its Cookie plugin:
 ```html
 <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
 <script src="http://cdn.jsdelivr.net/jquery.cookie/1.4.0/jquery.cookie.min.js"></script>
-<script src="path/to/jquery.djangocsrf.js"></script>
+<script src="http://cdn.jsdelivr.net/gh/bfontaine/jquery-djangocsrf@0.1.1/jquery.djangocsrf.js"></script>
 ```
 
 [release-0.1.1]: https://github.com/bfontaine/jquery-djangocsrf/releases/download/0.1.1/jquery.djangocsrf-0.1.1.min.js
