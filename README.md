@@ -13,7 +13,7 @@ the Cookie library:
 ```html
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/js-cookie/js-cookie@1.5.1/src/js.cookie.js"></script>
-<script src="path/to/jquery.djangocsrf.js"></script>
+<script src="http://cdn.jsdelivr.net/gh/bfontaine/jquery-djangocsrf@0.1.1/jquery.djangocsrf.js"></script>
 ```
 
 [release-0.1.1]: https://github.com/bfontaine/jquery-djangocsrf/releases/download/0.1.1/jquery.djangocsrf-0.1.1.min.js
