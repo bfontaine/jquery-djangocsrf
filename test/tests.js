@@ -6,7 +6,7 @@ if (typeof window !== 'object' || !window._in_browser) {
 module('enable', {
 	setup: function() {
 		$.djangocsrf( false );
-        $.removeCookie('csrftoken');
+        Cookies.remove('csrftoken');
 	}
 });
 
@@ -49,7 +49,7 @@ asyncTest('should extract token from cookie', function() {
 	var tk = 'xea9$%' + (Math.random()*100|0);
 	expect(2);
 	$.djangocsrf( true );
-	$.cookie('csrftoken', tk);
+	Cookies.set('csrftoken', tk);
 	$.ajax({
 		url: '/csrf',
 		success: function( data ) {
@@ -75,7 +75,7 @@ asyncTest('should not add an header if cookie is not set', function() {
 module('disable', {
 	setup: function() {
 		$.djangocsrf( true );
-        $.removeCookie('csrftoken');
+        Cookies.remove('csrftoken');
 	}
 });
 

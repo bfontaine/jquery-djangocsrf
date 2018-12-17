@@ -5,11 +5,11 @@
 (function (factory) {
 	if (typeof exports === "object") {
 		// CommonJS
-		factory(require("jquery"));
+		factory(require("jquery"), require("js-cookie"));
 	} else {
-		factory(jQuery);
+		factory(jQuery, Cookies);
 	}
-})(function ( $ ) {
+})(function ( $, Cookies ) {
 
 	var enabled    = false,
 		http_re    = /^https?:/,
@@ -20,7 +20,7 @@
 		if ( !enabled ) {
 			return;
 		}
-		var csrf = $.cookie( "csrftoken" ),
+		var csrf = Cookies.get( "csrftoken" ),
 		    url  = settings.url;
 
 		if ( csrf && !http_re.test(url) ) {
