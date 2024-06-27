@@ -25,6 +25,14 @@ http.createServer(function(request, response) {
 	}
 
 	var uri = url.parse(request.url).pathname;
+
+	// Avoid path traversal
+	if (path.normalize(decodeURI(uri)) !== decodeURI(uri)) {
+		response.statusCode = 403;
+		response.end();
+		return;
+	}
+
 	var filename = path.join(process.cwd(), uri);
 
 	fs.readFile(filename, 'binary', function(err, file) {
